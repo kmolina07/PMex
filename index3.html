@@ -1,0 +1,291 @@
+<!DOCTYPE html>  
+<html>  
+  
+<head> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+	
+
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+    <title>Mexico Monitoring System</title>  
+      
+    <!-- style to create vertical border -->
+    <style> 
+        .horizontal {
+			padding: 0px;
+			height: 294px;
+			background: #006341;
+          	width: 100%; 
+           	position: absolute;		z-index: -1;
+        } 
+		
+		.csulaLogo {
+			display: block;
+			margin-left: auto;
+			height: 200px;
+			width: 200px;
+			padding-top: 120px;
+		}
+		
+		#sus {
+			position: relative;
+			z-index: auto;
+			
+		
+		}
+		
+		#sus img{
+			position: absolute;
+			top: 130px;
+			left: 0px;
+			
+		}
+		
+		
+		.sPanels{
+			height: 280px;
+			top: 87.5px;
+            width: 100%; 
+            position: absolute;
+			opacity: 0.7;
+		}
+		
+		.header{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			height: 130px;
+			width: 100%;
+			float: right;
+			
+		}
+		#navmenu {
+			list-style: none;
+			width: 600px;
+			float: right;
+			}
+		
+		#navmenu li {
+			text-align: center;
+			float: left;
+			color: #000000;
+			width: 20%;
+			}
+		
+		.mB {
+   			background-color: #006341;
+			border: 2px solid #006341;
+    		color: white;
+    		padding: 10px 20px;
+    		cursor: pointer;
+    		transition-duration: 0.4s;
+    		font-size: 18px;
+   			margin: 10px 10px 10px 10px;
+   			
+			}
+
+		.mB:hover {
+   			border-bottom: 3px solid #D5AC0C;
+			}
+
+		.mB:active {
+    		transform: translateY(4px);
+			}
+		.pSites {
+   			background-color: #006341;
+    		color: white;
+    		padding: 10px 20px;
+    		cursor: pointer;
+    		border: 2px solid #006341;
+    		transition-duration: 0.4s;
+    		font-size: 18px;
+   			margin: 10px 10px 10px 10px;
+   		
+			
+			}	
+		.pSites:hover, .pSites:focus {
+			border-bottom: 3px solid #D5AC0C;
+			
+			}
+		
+		.dropdown {
+ 			position: relative;
+  			display: inline-block;
+			
+			}
+		.dropdown-content {
+ 	 		display: none;
+  			position: absolute;
+  			background-color: ;
+  			min-width: 160px;
+  			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  			z-index: 1;
+			
+}
+
+		.dropdown-content a {
+  			color: white;
+			background: #006341;
+  			padding: 10px 20px;
+  			text-decoration: none;
+  			display: block;
+			border: 2px solid #023E00;
+			
+			}
+		
+		.dropdown-content a: hover {
+			background-color: #006341; 
+				
+			}
+		.show {
+			display:block;
+			border-radius: 10px;
+			
+			}
+		
+		.wrapper{
+			align: center;
+		}
+		
+		.social-menu ul {
+   			position: absolute;
+  			top: 50%;
+    		left: 50%;
+    		transform: translate(-50%, -50%);
+    		padding: 0;
+    		margin: 0;
+    		display: flex;
+		}
+		.social-menu ul li {
+    		list-style: none;
+    		margin: 0 10px;
+		}
+		
+		.social-menu ul li .fa {
+    		color: #000000;
+    		font-size: 25px;
+    		line-height: 50px;
+    		transition: .5s;
+		}
+		
+		.social-menu ul li .fa:hover {
+    		color: #ffffff;
+		}
+		
+		.social-menu ul li a {
+    		position: relative;
+    		display: block;
+    		width: 50px;
+    		height: 50px;
+    		border-radius: 50%;
+    		background-color: white;
+    		text-align: center;
+    		transition: 0.5s;
+    		transform: translate(0,0px);
+    		box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+			}	
+		
+		.social-menu ul li a:hover {
+    		transform: rotate(0deg) skew(0deg) translate(0, -10px);
+			}
+		
+		.social-menu ul li:nth-child(1) a:hover {
+    		background-color: #3b5999;
+			}
+		
+		.social-menu ul li:nth-child(2) a:hover {
+   	 		background-color: #55acee;
+			}
+		
+		.social-menu ul li:nth-child(3) a:hover {
+    		background-color: #e4405f;
+			}
+		
+		.social-menu ul li:nth-child(4) a:hover {
+   	 		background-color: #cd201f;
+			}
+		
+		.social-menu ul li:nth-child(5) a:hover {
+    		background-color: #0077B5;
+			}
+		
+		.footer-parent{
+			padding-left: 40%;
+			text-align: center;
+			position: absolute;
+			top: 100%;
+
+		}
+		
+		.bottommenu {
+			color: gray;
+			font-size: smaller;
+			clear: both;	
+		}
+	
+		
+    </style>
+	
+</head>  
+ 	<body>
+	<div class = "header">
+		<ul id = "navmenu">
+			<button onClick="window.location.href = 'index3.html';" class="mB">Home</button>
+			<div class="dropdown">
+			<button onClick="dropFunction()" class="pSites">Project Sites</button>
+			<div id="projectSites" class="dropdown-content">
+				<a href="coyuche.html">Coyuche</a>
+    			<a href="huamuchi.html">Huamuche</a>
+				<a href="sanJuan.html">San Juan Teitipac</a>
+				
+			</div>
+			</div> 
+			
+			<button onClick="window.location.href = 'mission.html';" class="mB">Mission</button>
+			<button onClick="window.location.href = 'aboutUs.html';" class="mB">About Us</button>
+			
+			
+		</ul>
+	</div>
+          
+    <div class = "horizontal"></div>
+		 
+	<img class ="sPanels" src="panelsv2.jpg" alt = "solar panels">
+	<div id="sus">
+		<img class ="esw" img src = "esw.png" alt = "engineers for sustainable world">
+	</div>
+	<img class ="csulaLogo" img src= "csulalogogreen.PNG" alt = "csula eagle">
+	
+	<div class="wrapper">	
+		<div class ="social-menu">
+			<ul>
+            	<li><a href="https://www.facebook.com/CalStateLA" target ="_blank"><i class="fa fa-facebook"></i></a></li>
+				
+            	<li><a href="https://twitter.com/calstatela" target ="_blank"><i class="fa fa-twitter"></i></a></li>
+				
+           	 	<li><a href="https://www.instagram.com/calstatela/" target ="_blank"><i class="fa fa-instagram"></i></a></li>
+				
+            	<li><a href="https://www.youtube.com/user/csulosangeles" target="_blank"><i class="fa fa-youtube"></i></a></li>
+				
+            	<li><a href="https://www.linkedin.com/school/california-state-university-los-angeles" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+				
+        	</ul>
+    	</div>
+	</div>
+		
+
+	
+	<div class="footer-parent">
+		
+		<p class="bottommenu">5151 State Uniersity Drive, Los Angeles, CA 90023 (323) 343-3000.</p>	
+		
+		<p class="bottommenu"> © 2019 Trustees of the California State University</p>
+		
+		<p class="bottommenu">Kill me now pls</p>
+		
+	</div>
+	
+  	
+	</body>
+</html> 
+<script src="pMex.js"></script>

@@ -1,0 +1,480 @@
+<!Doctype html>
+<html>
+	<head>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		
+		<meta charset="utf-8">
+			<title>About Us</title>
+		<style>
+			
+        .horizontal {
+			padding: 0px;
+			height: 294px;
+			background: #006341;
+          	width: 100%; 
+           	position: absolute;		z-index: -1;
+        } 
+		
+		.csulaLogo {
+			display: block;
+			margin-left: auto;
+			height: 200px;
+			width: 200px;
+			padding-top: 120px;
+		}
+		
+		#sus {
+			position: relative;
+			z-index: auto;
+			
+		
+		}
+		
+		#sus img{
+			position: absolute;
+			top: 130px;
+			left: 0px;
+			
+		}
+		
+		
+		.sPanels{
+			height: 280px;
+			top: 87.5px;
+            width: 100%; 
+            position: absolute;
+			opacity: 0.7;
+		}
+		
+		.header{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			height: 130px;
+			width: 100%;
+			float: right;
+			
+		}
+		#navmenu {
+			list-style: none;
+			width: 600px;
+			float: right;
+	}
+		
+		#navmenu li {
+			text-align: center;
+			float: left;
+			color: #000000;
+			width: 20%;
+	}
+		
+		.mB {
+   			background-color: #006341;
+			border: 2px solid #006341;
+    		color: white;
+    		padding: 10px 20px;
+    		cursor: pointer;
+    		transition-duration: 0.4s;
+    		font-size: 18px;
+   			margin: 10px 10px 10px 10px;
+   			
+}
+
+		.mB:hover {
+   			border-bottom: 3px solid #D5AC0C;
+}
+
+		.mB:active {
+    		transform: translateY(4px);
+}
+		.pSites {
+   			background-color: #006341;
+    		color: white;
+    		padding: 10px 20px;
+    		cursor: pointer;
+    		border: 2px solid #006341;
+    		transition-duration: 0.4s;
+    		font-size: 18px;
+   			margin: 10px 10px 10px 10px;
+   		
+			
+}	
+		.pSites:hover, .pSites:focus {
+			border-bottom: 3px solid #D5AC0C;
+			
+}
+		
+		.dropdown {
+ 			position: relative;
+  			display: inline-block;
+			
+}
+		.dropdown-content {
+ 	 		display: none;
+  			position: absolute;
+  			background-color: ;
+  			min-width: 160px;
+  			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  			z-index: 1;
+			
+}
+
+		.dropdown-content a {
+  			color: white;
+			background: #006341;
+  			padding: 10px 20px;
+  			text-decoration: none;
+  			display: block;
+			border: 2px solid #023E00;
+			
+}
+		
+		.dropdown-content a: hover {
+			background-color: #006341; 
+				
+}
+		.show {
+			display:block;
+			border-radius: 10px;
+			
+}
+			
+		.About {
+				text-align: center;
+				font-family: "Arial" , cursive, sans-serif;
+				padding-top: 12px;
+			}
+		
+		h1 {
+				text-decoration: underline;
+			}
+			
+		figcaption{
+				font-size: 0.5em;
+			}
+			figure{
+				align-content: center;
+				padding-top: 30px;
+			}
+			
+			tbody{
+				background-color: #FFFFFF;
+				
+			}
+			tr:nth-child(even) {
+				background-color: #F0F0F0
+				
+			}
+
+		</style>
+	
+	</head>
+		<body>
+		<div class = "header">
+			<ul id = "navmenu">
+				<button onClick="window.location.href = 'index3.html';" class="mB">Home</button>
+					<div class="dropdown">
+						<button onClick="dropFunction()" class="pSites">Project Sites</button>
+							<div id="projectSites" class="dropdown-content">
+								<a href="coyuche.html">Coyuche</a>
+    							<a href="huamuchi.html">Huamuche</a>
+								<a href="sanJuan.html">San Juan Teitipac</a>
+				
+							</div>
+					</div> 
+			
+				<button onClick="window.location.href = 'mission.html';" class="mB">Mission</button>
+				<button onClick="window.location.href = 'aboutUs.html';" class="mB">About Us</button>
+		
+			</ul>
+	</div>
+	
+	<div class = "horizontal"></div>
+		<img class ="sPanels" src="panelsv2.jpg" alt = "solar panels">
+	<div id="sus">
+		<img class ="esw" img src = "esw.png" alt = "engineers for sustainable world">
+	</div>
+	<img class = "csulaLogo" src = "csulalogogreen.PNG" alt = "csula eagle">
+
+				<meta charset="utf-8">
+					
+		<div class="About">
+			
+			<h1>About Us</h1>
+				<figure>
+					<img src="19-20 project mexico team.jpg" alt="Senior Design Team 2019-2020">
+						<figcaption>2019-2020 team (Left to right: Advisor: <a href="http://www.calstatela.edu/faculty/mo-zhang" target="_blank">Mo Zhang.</a> Team Members; Esteban Sifuentes, Daniel Galindo, Kevin Molina, Kevin Reyes, Ramiro Martinez, Bryan Castillo, Christopher Rodriguez</figcaption>
+				</figure>
+		
+		</div>
+			<div class = "T">
+				<table class="borderless" style="width: 50%" border = "0">
+					<td>
+						<tbody>
+							<tr>
+								<td style = "width: 140px">
+									<p></p>
+										<img alt = "Mo Zhang" src = "MoZhang.PNG" style = "width: 155px; height: 200px; margin-left: 6px; margin-right: 6px; float: left">
+								</td>
+								<td>
+									<p>
+										<span style = "font-size: 18px">
+											<strong>Mo Zhang, M.S, Electrical Engineering</strong>
+										</span>
+									</p>
+									<p>
+										<p><b>Project Role:</b>  Faculty Advisor</p>	
+									</p>
+									<p>
+										<p><b>Project Responsinbilities:</b>  Facilitate team meetings and keep team on track</p>
+									</p>
+									<p>
+										<strong>Phone:</strong> (626) 888-3873
+									</p>
+									<p>
+										<strong>Email:</strong>
+										
+										<a href = "mailto:mozhangster@gmail.com">mozhangster@gmail.com</a>
+									</p>
+									<p>
+										<strong>Homepage:</strong>
+										<a href = "http://www.calstatela.edu/faculty/mo-zhang" target = "_blank">http://www.calstatela.edu/faculty/mo-zhang
+										</a>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td style = "width: 140px">
+									<p></p>
+										<img alt = "Kevin Molina" src = "kmol.jpg" style = "width: 155px; height: 200px; margin-left: 6px; margin-right: 6px; float: left">
+								</td>
+								<td>
+									<p>
+										<span style = "font-size: 18px">
+											<strong>Kevin Molina, B.S, Mechanical Engineering</strong>
+										</span>
+									</p>
+									<p>
+										<p><b>Project Role:</b>  Fall 2019 Team Leader</p>	
+									</p>
+									<p>
+										<p><b>Project Responsinbilities:</b>  Mechanical Analysis and Web Design</p>
+									</p>
+									<p>
+										<strong>Phone:</strong> (323) 459-7492
+									</p>
+									<p>
+										<strong>Email:</strong>
+										
+										<a href = "mailto:kevinmolina1007@gmail.com">kevinmolina1007@gmail.com</a>
+									</p>
+									<p>
+										<strong>Homepage:</strong>
+										<a href = "https://www.facebook.com/kevin.molina.104?ref=bookmarks" target = "_blank">https://www.facebook.com/kevin.molina.104
+										</a>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td style = "width: 140px">
+									<p></p>
+										<img alt = "Bryan Castillo" src = "BryanCastillo.PNG" style = "width: 155px; height: 200px; margin-left: 6px; margin-right: 6px; float: left">
+								</td>
+								<td>
+									<p>
+										<span style = "font-size: 18px">
+											<strong>Bryan Castillo, B.S, Electrical Engineering</strong>
+										</span>
+									</p>
+									<p>
+										<p><b>Project Role:</b>  Spring 2020 Team Leader</p>	
+									</p>
+									<p>
+										<p><b>Project Responsinbilities:</b>  Project Management</p>
+									</p>
+									<p>
+										<strong>Phone:</strong> (323) 608-1645
+									</p>
+									<p>
+										<strong>Email:</strong>
+										
+										<a href = "mailto:Bryan15castillo@gmail.com">bryan15castillo@gmail.com</a>
+									</p>
+									<p>
+										<strong>Homepage:</strong>
+										<a href = "???" target = "_blank">???
+										</a>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td style = "width: 140px">
+									<p></p>
+										<img alt = "Christopher Rodriguez" src = "ChrisRodriguez.jpg" style = "width: 155px; margin-left: 6px; margin-right: 6px; float: left">
+								</td>
+								<td>
+									<p>
+										<span style = "font-size: 18px">
+											<strong>Christopher Rodriguez, B.S, Electrical Engineering</strong>
+										</span>
+									</p>
+									<p>
+										<p><b>Project Role:</b>  Data Analyst</p>	
+									</p>
+									<p>
+										<p><b>Project Responsinbilities:</b>  Testbed Troubleshooting and Electrical Design</p>
+									</p>
+									<p>
+										<strong>Phone:</strong> (626) 393-2137
+									</p>
+									<p>
+										<strong>Email:</strong>
+										
+										<a href = "mailto:chrisrod115@gmail.com">chrisrod115@gmail.com</a>
+									</p>
+									<p>
+										<strong>Homepage:</strong>
+										<a href = "???" target = "_blank">???
+										</a>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td style = "width: 140px">
+									<p></p>
+										<img alt = "Kevin Reyes" src = "KevinReyes.PNG" style = "width: 155px; height: 200px; margin-left: 6px; margin-right: 6px; float: left">
+								</td>
+								<td>
+									<p>
+										<span style = "font-size: 18px">
+											<strong>Kevin Reyes, B.S, Electrical Engineering</strong>
+										</span>
+									</p>
+									<p>
+										<p><b>Project Role:</b>  Communitcations and Transmission</p>	
+									</p>
+									<p>
+										<p><b>Project Responsinbilities:</b>  Telemetry Method Research and Power Budget</p>
+									</p>
+									<p>
+										<strong>Phone:</strong> (562) 415-6726
+									</p>
+									<p>
+										<strong>Email:</strong>
+										
+										<a href = "mailto:kreyes32@calstatela.edu">kreyes32@calstatela.edu</a>
+									</p>
+									<p>
+										<strong>Homepage:</strong>
+										<a href = "???" target = "_blank">???
+										</a>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td style = "width: 140px">
+									<p></p>
+										<img alt = "Daniel Galindo" src = "danielgalindo.PNG" style = "width: 155px; height: 200px; margin-left: 6px; margin-right: 6px; float: left">
+								</td>
+								<td>
+									<p>
+										<span style = "font-size: 18px">
+											<strong>Daniel Galindo, B.S, Electrical Engineering</strong>
+										</span>
+									</p>
+									<p>
+										<p><b>Project Role:</b>  Power System Design Lead</p>	
+									</p>
+									<p>
+										<p><b>Project Responsinbilities:</b>  Head Electrical Design and Sensors Engineer</p>
+									</p>
+									<p>
+										<strong>Phone:</strong> (562) 336-3726
+									</p>
+									<p>
+										<strong>Email:</strong>
+										
+										<a href = "mailto:danielgalindo_huaman@yahoo.com">danielgalindo_huaman@yahoo.com</a>
+									</p>
+									<p>
+										<strong>Homepage:</strong>
+										<a href = "???" target = "_blank">???
+										</a>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td style = "width: 140px">
+									<p></p>
+										<img alt = "Esteban Sifuentes" src = "EstebanSifuentes.PNG" style = "width: 155px;  height: 200px; margin-left: 6px; margin-right: 6px; float: left">
+								</td>
+								<td>
+									<p>
+										<span style = "font-size: 18px">
+											<strong>Esteban Sifuentes, B.S, Electrical Engineering</strong>
+										</span>
+									</p>
+									<p>
+										<p><b>Project Role:</b>Tellemetry Research</p>	
+									</p>
+									<p>
+										<p><b>Project Responsinbilities:</b>  Testbed Troubleshooting and Charge Controller Research</p>
+									</p>
+									<p>
+										<strong>Phone:</strong> (562) 644-4615
+									</p>
+									<p>
+										<strong>Email:</strong>
+										
+										<a href = "mailto:esifuen2@calstatela.edu">esifuen2@calstatela.edu</a>
+									</p>
+									<p>
+										<strong>Homepage:</strong>
+										<a href = "???" target = "_blank">???
+										</a>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td style = "width: 140px">
+									<p></p>
+										<img alt = "Ramiro Martinez" src = "Ramiro.jpg" style = "width: 155px; height: 200px; margin-left: 6px; margin-right: 6px; float: left">
+								</td>
+								<td>
+									<p>
+										<span style = "font-size: 18px">
+											<strong>Ramiro Martinez, B.S, Electrical Engineering</strong>
+										</span>
+									</p>
+									<p>
+										<p><b>Project Role:</b>  Electrical Design</p>	
+									</p>
+									<p>
+										<p><b>Project Responsinbilities:</b>  Logistical Analysis Electrical Design</p>
+									</p>
+									<p>
+										<strong>Phone:</strong> (323) 271-7662
+									</p>
+									<p>
+										<strong>Email:</strong>
+										
+										<a href = "mailto:rmart115@calstatela.edu">rmart115@calstatela.edu</a>
+									</p>
+									<p>
+										<strong>Homepage:</strong>
+										<a href = "???" target = "_blank">???
+										</a>
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</td>
+				</table>
+				
+				
+			</div>
+		</body>
+</html>
+<script src="pMex.js"></script>

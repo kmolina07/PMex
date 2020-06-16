@@ -1,0 +1,254 @@
+<!Doctype html>
+<html>
+	<head>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		
+		<meta charset="utf-8">
+			<title>Huamuche</title>
+		<style>
+			
+        .horizontal {
+			padding: 0px;
+			height: 294px;
+			background: #006341;
+          	width: 100%; 
+           	position: absolute;		z-index: -1;
+        } 
+		
+		.csulaLogo {
+			display: block;
+			margin-left: auto;
+			height: 200px;
+			width: 200px;
+			padding-top: 120px;
+		}
+		
+		#sus {
+			position: relative;
+			z-index: auto;
+			
+		
+		}
+		
+		#sus img{
+			position: absolute;
+			top: 130px;
+			left: 0px;
+			
+		}
+		
+		
+		.sPanels{
+			height: 280px;
+			top: 87.5px;
+            width: 100%; 
+            position: absolute;
+			opacity: 0.7;
+		}
+		
+		.header{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			height: 130px;
+			width: 100%;
+			float: right;
+			
+		}
+		#navmenu {
+			list-style: none;
+			width: 600px;
+			float: right;
+	}
+		
+		#navmenu li {
+			text-align: center;
+			float: left;
+			color: #000000;
+			width: 20%;
+	}
+		
+		.mB {
+   			background-color: #006341;
+			border: 2px solid #006341;
+    		color: white;
+    		padding: 10px 20px;
+    		cursor: pointer;
+    		transition-duration: 0.4s;
+    		font-size: 18px;
+   			margin: 10px 10px 10px 10px;
+   			
+}
+
+		.mB:hover {
+   			border-bottom: 3px solid #D5AC0C;
+}
+
+		.mB:active {
+    		transform: translateY(4px);
+}
+		.pSites {
+   			background-color: #006341;
+    		color: white;
+    		padding: 10px 20px;
+    		cursor: pointer;
+    		border: 2px solid #006341;
+    		transition-duration: 0.4s;
+    		font-size: 18px;
+   			margin: 10px 10px 10px 10px;
+   		
+			
+}	
+		.pSites:hover, .pSites:focus {
+			border-bottom: 3px solid #D5AC0C;
+			
+}
+		
+		.dropdown {
+ 			position: relative;
+  			display: inline-block;
+			
+}
+		.dropdown-content {
+ 	 		display: none;
+  			position: absolute;
+  			background-color: ;
+  			min-width: 160px;
+  			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  			z-index: 1;
+			
+}
+
+		.dropdown-content a {
+  			color: white;
+			background: #006341;
+  			padding: 10px 20px;
+  			text-decoration: none;
+  			display: block;
+			border: 2px solid #023E00;
+			
+}
+		
+		.dropdown-content a: hover {
+			background-color: #006341; 
+				
+}
+		.show {
+			display:block;
+			border-radius: 10px;
+			
+}
+			
+		.huamuche {
+				text-align: center;
+				font-family: "Arial" , cursive, sans-serif;
+				padding-top: 12px;
+			}
+		
+			h1 {
+				text-decoration: underline;
+			}
+			
+		
+		</style>
+	
+	</head>
+		<body>
+		<div class = "header">
+			<ul id = "navmenu">
+				<button onClick="window.location.href = 'index3.html';" class="mB">Home</button>
+					<div class="dropdown">
+						<button onClick="dropFunction()" class="pSites">Project Sites</button>
+							<div id="projectSites" class="dropdown-content">
+								<a href="coyuche.html">Coyuche</a>
+    							<a href="huamuchi.html">Huamuche</a>
+								<a href="sanJuan.html">San Juan Teitipac</a>
+				
+							</div>
+					</div> 
+			
+				<button onClick="window.location.href = 'mission.html';" class="mB">Mission</button>
+				<button onClick="window.location.href = 'aboutUs.html';" class="mB">About Us</button>
+		
+			</ul>
+	</div>
+	
+	<div class = "horizontal"></div>
+		<img class ="sPanels" src="panelsv2.jpg" alt = "solar panels">
+	<div id="sus">
+		<img class ="esw" img src = "esw.png" alt = "engineers for sustainable world">
+	</div>
+	<img class = "csulaLogo" src = "csulalogogreen.PNG" alt = "csula eagle">
+
+				<meta charset="utf-8">
+					
+		<div class="huamuche">
+			
+			<h1>Huamuche</h1>
+			
+		</div>
+			
+			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    		<script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Hour', 'Voltage'],
+          ['1',  65],
+          ['2',  64],
+          ['3',  60],
+          ['4',  65],
+		  ['5',  60],
+          ['6',  61],
+          ['7',  68],
+          ['8',  65],
+          ['9',  63],
+          ['10', 66],
+          ['11', 58],
+          ['12', 55],
+          ['13', 45],
+          ['14', 49],
+          ['15', 45],
+          ['16', 54],
+	      ['17', 50],
+          ['18', 50],
+          ['19', 57],
+          ['20', 56],          
+          ['21', 59],
+          ['22', 62],
+          ['23', 63],
+		  ['00', 65]
+        ]);
+
+        var options = {
+          title: 'Voltage over Time',
+          curveType: 'function',
+          hAxis: {
+			  title: 'Time of Day (24-hour clock)'
+		  },
+		  vAxis: {
+			  title: "Voltage from Solar Panels (V)"
+		  }
+			
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+ 
+ 
+    <div id="curve_chart" style="width: 1000px; height: 500px; align-content: center;"></div>
+  
+
+			
+			
+		</body>
+</html>
+<script src="pMex.js"></script>

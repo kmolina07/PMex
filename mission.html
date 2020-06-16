@@ -1,0 +1,240 @@
+<!Doctype html>
+<html>
+		<head> 
+    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+			
+			<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>  
+        Mexico Monitoring System 
+    </title>  
+      
+    <!-- style to create vertical border -->
+    <style> 
+         .horizontal {
+			padding: 0px;
+			height: 294px;
+			background: #006341;
+          	width: 100%; 
+           	position: absolute;		z-index: -1;
+        } 
+		
+		.csulaLogo {
+			display: block;
+			margin-left: auto;
+			height: 200px;
+			width: 200px;
+			padding-top: 120px;
+		}
+		
+		#sus {
+			position: relative;
+			z-index: auto;
+			
+		
+		}
+		
+		#sus img{
+			position: absolute;
+			top: 130px;
+			left: 0px;
+			
+		}
+		
+		
+		.sPanels{
+			height: 280px;
+			top: 87.5px;
+            width: 100%; 
+            position: absolute;
+			opacity: 0.7;
+		}
+		
+		.header{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			height: 130px;
+			width: 100%;
+			float: right;
+			
+		}
+		#navmenu {
+			list-style: none;
+			width: 600px;
+			float: right;
+	}
+		
+		#navmenu li {
+			text-align: center;
+			float: left;
+			color: #000000;
+			width: 20%;
+	}
+		
+		.mB {
+   			background-color: #006341;
+			border: 2px solid #006341;
+    		color: white;
+    		padding: 10px 20px;
+    		cursor: pointer;
+    		transition-duration: 0.4s;
+    		font-size: 18px;
+   			margin: 10px 10px 10px 10px;
+   			
+}
+
+		.mB:hover {
+   			border-bottom: 3px solid #D5AC0C;
+}
+
+		.mB:active {
+    		transform: translateY(4px);
+}
+		.pSites {
+   			background-color: #006341;
+    		color: white;
+    		padding: 10px 20px;
+    		cursor: pointer;
+    		border: 2px solid #006341;
+    		transition-duration: 0.4s;
+    		font-size: 18px;
+   			margin: 10px 10px 10px 10px;
+   		
+			
+}	
+		.pSites:hover, .pSites:focus {
+			border-bottom: 3px solid #D5AC0C;
+			
+}
+		
+		.dropdown {
+ 			position: relative;
+  			display: inline-block;
+			
+}
+		.dropdown-content {
+ 	 		display: none;
+  			position: absolute;
+  			background-color: ;
+  			min-width: 160px;
+  			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  			z-index: 1;
+			
+}
+
+		.dropdown-content a {
+  			color: white;
+			background: #006341;
+  			padding: 10px 20px;
+  			text-decoration: none;
+  			display: block;
+			border: 2px solid #023E00;
+			
+}
+		
+		.dropdown-content a: hover {
+			background-color: #006341; 
+				
+}
+		.show {
+			display:block;
+			border-radius: 10px;
+		}
+	
+		.mission {
+			padding-top: 20px;
+			text-align: center;
+			font-family: "Arial" , cursive, sans-serif;
+			clear: left;
+			min-width: 100vw;
+			max-height: 100vh;
+			
+		}
+		
+		#missionText {
+			padding-right: 420px;
+			padding-top: 30px;
+			text-align: left;
+			font-size: 1.5em;
+			font-family: "Arial" , cursive, sans-serif;
+			mid-height: 100vh;
+		}
+		
+		h1{
+			text-decoration: underline;
+			font-size: 2.0em;
+		}
+		
+		.labs1 {
+			float: right;
+			max-height: 20%;
+			max-width: 20%;
+			padding-top: 125px;
+		}
+		.labs2 {
+			float: right;
+			height: 25%;
+			width: 25%;
+			padding-top: 125px;
+		}
+			
+		@media(min-width: 700px){
+			.grid{
+				grid-template-columns; 1fr 1fr 1fr 1fr;
+			}
+			
+		}
+
+    </style> 
+</head>  
+<body>
+ <div class = "header">
+			<ul id = "navmenu">
+				<button onClick="window.location.href = 'index3.html';" class="mB">Home</button>
+					<div class="dropdown">
+						<button onClick="dropFunction()" class="pSites">Project Sites</button>
+							<div id="projectSites" class="dropdown-content">
+								<a href="coyuche.html">Coyuche</a>
+    							<a href="huamuchi.html">Huamuche</a>
+								<a href="sanJuan.html">San Juan Teitipac</a>
+				
+							</div>
+					</div> 
+			
+				<button onClick="window.location.href = 'mission.html';" class="mB">Mission</button>
+				<button onClick="window.location.href = 'aboutUs.html';" class="mB">About Us</button>
+		
+			</ul>
+	</div>
+	
+          
+    <div class = "horizontal"></div>
+		<img class ="sPanels" src="panelsv2.jpg" alt = "solar panels">
+	<div id="sus">
+		<img class ="esw" img src = "esw.png" alt = "engineers for sustainable world">
+	</div>
+	<img class = "csulaLogo" src = "csulalogogreen.PNG" alt = "csula eagle">
+	
+		<meta charset="utf-8">
+
+			
+	
+
+		
+	<title>Mission Page</title>
+
+			<main id = "main">
+				<section id = "section-a" class = "grid">
+					
+					<div class="mission">
+						<img class ="labs1" img src = "emptylab.PNG" alt ="coyuche lab no computers">
+						<img class ="labs2" img src = "complab.PNG" alt ="coyuche lab with computers intalled">
+							<h1>Our Mission</h1>
+								<p id="missionText">We are the California State University of Los Angeles of <a href ="https://www.eswglobal.org/">Engineers for a Sustainable World</a>, a student-run organization dedicated to bringing communities together to develop, implement, and share sustainable technologies and practices worldwide. CSULA has provided solar powered systems that power computer labs for rural communities in Oaxaca, Mexico. Currently there are three computer labs, one in Coyuche, Huamuchi, and San Juan Teitipac. The next goal is to set up remote monitoring systems in order to be able to diganose system health issues without having to be at each project site in person.</p>
+	
+			</div>
+				</section>
+			</main>
+		</body>
+</html>
+<script src="pMex.js"></script>
